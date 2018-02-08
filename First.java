@@ -7,5 +7,7 @@ class First
 	System.out.println("third line");
 // made the changes in Third
 //one more change
+	System.out.println("line");
+	System.out.println("line");
 }
 }
