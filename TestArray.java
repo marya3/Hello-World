@@ -45,18 +45,28 @@ class StudentList
   }
   public void viewFirst()
   {
+    if (it == null){ it = StudentListArray.listIterator();
+      {
+        if (it.hasNext())
+        {
+        Student st = it.next();
+        System.out.println("Student Name "+st.getName());
+        System.out.println("Student age " +st.getage());
+        }
+      }
+  }
     System.out.println("First Student Name "+StudentListArray.get(0).getName());
     System.out.println("First Student age " +StudentListArray.get(0).getage());
   }
   public void viewNext()
   {
-    it = StudentListArray.iterator();
-    //if (it.hasNext())
+    if(it == null){System.out.println("pointing to null");}
+    if (it.hasNext())
     {
-
-      //System.out.println (it.Index());
-      //System.out.println("Student Name "+st.getName());
-      //System.out.println("Student age " +st.getage());
+      System.out.println("inside hasNext "+ it.nextIndex());
+      Student st = it.next();
+      System.out.println("Student Name "+st.getName());
+      System.out.println("Student age " +st.getage());
     }
   }
   public void viewAll()
@@ -64,6 +74,8 @@ class StudentList
     it = StudentListArray.listIterator();
     while(it.hasNext())
     {
+
+      System.out.println("inside viewall "+ it.nextIndex());
       Student st = it.next();
       System.out.println("Student Name "+st.getName());
       System.out.println("Student age " +st.getage());
@@ -76,7 +88,7 @@ class StudentList
   }
   public void removeS()
   {
-    
+
   }
 }
 class TestArray
