@@ -10,5 +10,6 @@ class First
 	System.out.println("line");
 	System.out.println("line");
 	//added a line for fourth branch
+	System.out.println("new line 1");
 }
 }
