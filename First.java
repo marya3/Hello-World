@@ -8,5 +8,6 @@ class First
 	System.out.println("line");
 	System.out.println("new line 1");
 	System.out.println("new line2");
+	System.out.println("new line3");
 }
 }
