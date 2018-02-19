@@ -1,0 +1,20 @@
+class StudetnList
+{
+  ArrayList<Student> StudentListArray = new ArrayList();
+  Scanner scanString;
+  String stringName;
+  int intAge;
+  public void addStudent()
+  {
+    System.out.println("enter student name");
+    scanString = new Scanner(System.in);
+    String stringName = scanString.next();
+    System.out.println("enter student Age");
+    scanString = new Scanner(System.in);
+    String s = scanString.next();
+    intAge = Integer.parseInt(s);
+    Student obj = new Student(stringName,intAge);
+    StudentListArray.add(obj);
+  }
+
+}
